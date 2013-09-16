@@ -1,4 +1,4 @@
-package com.github.tkawachi
+package com.github.tkawachi.iamkeeper
 
 /** The launched conscript entry point */
 class App extends xsbti.AppMain {
@@ -9,7 +9,7 @@ class App extends xsbti.AppMain {
 
 object App {
   /** Shared by the launched version and the runnable version,
-   * returns the process status code */
+    * returns the process status code */
   def run(args: Array[String]): Int = {
     println("Hello World: " + args.mkString(" "))
     0
@@ -20,4 +20,4 @@ object App {
   }
 }
 
-case class Exit(val code: Int) extends xsbti.Exit
+case class Exit(code: Int) extends xsbti.Exit
